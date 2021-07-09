@@ -1,0 +1,3 @@
+bot_token: "TESTTOKEN"
+allowed_users:
+  - USERID
