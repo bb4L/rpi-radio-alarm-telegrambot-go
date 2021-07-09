@@ -17,6 +17,7 @@ var logger = logging.GetLogger(os.Stdout, constants.DefaultPrefix, "handles")
 
 // AddDefaultHandles adds some default handles
 func AddDefaultHandles(b *tb.Bot, botConfig types.TelegramBotConfig, handler libraryTypes.DataHandler) {
+	dataHandler = handler
 	b.Handle(tb.OnText, func(m *tb.Message) {
 		b.Send(m.Sender, "Unknown command: "+m.Text)
 	})
