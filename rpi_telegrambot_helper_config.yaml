@@ -1,0 +1,4 @@
+helper_type: "api" # has to be one of "api", "storage"
+alarm_url: "localhost:8000"
+extra_header: ""
+extra_header_value: ""
