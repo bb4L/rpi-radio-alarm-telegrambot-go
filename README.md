@@ -8,6 +8,7 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/bb4l/rpi-radio-alarm-telegrambot-go)](https://goreportcard.com/report/github.com/bb4L/rpi-radio-alarm-telegrambot-go)
 ![GitHub issues](https://img.shields.io/github/issues-raw/bb4l/rpi-radio-alarm-telegrambot-go)
 ![Lines of code](https://img.shields.io/tokei/lines/github/bb4l/rpi-radio-alarm-telegrambot-go)
+[![CI](https://github.com/bb4L/rpi-radio-alarm-telegrambot-go/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/bb4L/rpi-radio-alarm-telegrambot-go/actions/workflows/build.yml)
 
 Golang telegrambot for the [rpi-radio-alarm-go](https://github.com/bb4L/rpi-radio-alarm-go)
 
