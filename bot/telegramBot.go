@@ -41,6 +41,7 @@ func StartTelegramBot(handler libraryTypes.DataHandler) {
 
 	handlers.AddDefaultHandles(b, botConfig, handler)
 	handlers.AddAlarmHandles(b, botConfig, handler)
+	handlers.AddAlarmButtonHandles(b, botConfig, handler)
 	handlers.AddRadioHandles(b, botConfig, handler)
 
 	logger.Println("starting telegrambot")

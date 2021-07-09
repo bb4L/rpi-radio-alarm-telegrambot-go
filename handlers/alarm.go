@@ -19,8 +19,8 @@ var (
 	getAllBtns     = &tb.InlineButton{Unique: "getAllBtns"}
 )
 
-// AddAlarmHandles adds the handles for the alarm commands
-func AddAlarmHandles(b *tb.Bot, botConfig types.TelegramBotConfig, handler libraryTypes.DataHandler) {
+// AddAlarmButtonHandles adds the handles for the alarm buttons
+func AddAlarmButtonHandles(b *tb.Bot, botConfig types.TelegramBotConfig, handler libraryTypes.DataHandler) {
 	b.Handle(getAllBtns, func(c *tb.Callback) {
 		if !botConfig.CanAccessBot(b, c.Sender) {
 			return
@@ -94,33 +94,10 @@ func AddAlarmHandles(b *tb.Bot, botConfig types.TelegramBotConfig, handler libra
 
 		b.Send(c.Sender, string(stringData))
 	})
+}
 
-	b.Handle("/delete_alarm", func(m *tb.Message) {
-		if !botConfig.CanAccessBot(b, m.Sender) {
-			return
-		}
-
-		splittedPayload := strings.Split(m.Payload, " ")
-
-		// handle idx
-		idx, err := strconv.Atoi(splittedPayload[0])
-		if err != nil {
-			b.Send(m.Sender, err.Error())
-			return
-		}
-
-		alarms, err := handler.DeleteAlarm(idx)
-		if err != nil {
-			b.Send(m.Sender, err.Error())
-			return
-		}
-
-		stringData, _ := json.Marshal(alarms)
-
-		logger.Printf("deleted alarm at idx=%d\n", idx)
-		b.Send(m.Sender, string(stringData))
-	})
-
+// AddAlarmHandles adds the handles for the alarm related commands
+func AddAlarmHandles(b *tb.Bot, botConfig types.TelegramBotConfig, handler libraryTypes.DataHandler) {
 	b.Handle("/add_alarm", func(m *tb.Message) {
 		if !botConfig.CanAccessBot(b, m.Sender) {
 			return
@@ -185,6 +162,32 @@ func AddAlarmHandles(b *tb.Bot, botConfig types.TelegramBotConfig, handler libra
 
 		stringData, _ := json.Marshal(alarm)
 		logger.Println("changed alarm, is now: " + string(stringData))
+		b.Send(m.Sender, string(stringData))
+	})
+
+	b.Handle("/delete_alarm", func(m *tb.Message) {
+		if !botConfig.CanAccessBot(b, m.Sender) {
+			return
+		}
+
+		splittedPayload := strings.Split(m.Payload, " ")
+
+		// handle idx
+		idx, err := strconv.Atoi(splittedPayload[0])
+		if err != nil {
+			b.Send(m.Sender, err.Error())
+			return
+		}
+
+		alarms, err := handler.DeleteAlarm(idx)
+		if err != nil {
+			b.Send(m.Sender, err.Error())
+			return
+		}
+
+		stringData, _ := json.Marshal(alarms)
+
+		logger.Printf("deleted alarm at idx=%d\n", idx)
 		b.Send(m.Sender, string(stringData))
 	})
 

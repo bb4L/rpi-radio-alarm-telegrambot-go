@@ -36,10 +36,10 @@ func main() {
 	if helperConfig.HelperType == "storage" {
 		bot.StartTelegramBot(&storage.Helper{})
 	} else if helperConfig.HelperType == "api" {
-		if helperConfig.AlarmUrl == "" {
+		if helperConfig.AlarmURL == "" {
 			logger.Fatalf("no AlarmUrl set")
 		}
-		bot.StartTelegramBot(&api.Helper{AlarmURL: helperConfig.AlarmUrl, ExtraHeader: helperConfig.ExtraHeader, ExtreaHeaderValue: helperConfig.ExtraHeaderValue})
+		bot.StartTelegramBot(&api.Helper{AlarmURL: helperConfig.AlarmURL, ExtraHeader: helperConfig.ExtraHeader, ExtreaHeaderValue: helperConfig.ExtraHeaderValue})
 
 	} else {
 		logger.Fatalf("invalid config for Helpertype, was %s expected to be \"api\" or \"storage\" ", err)
