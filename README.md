@@ -5,7 +5,7 @@
 ![GitHub](https://img.shields.io/github/license/bb4L/rpi-radio-alarm-telegrambot-go)
 ![GitHub Release Date](https://img.shields.io/github/release-date/bb4L/rpi-radio-alarm-telegrambot-go)
 ![GitHub last commit](https://img.shields.io/github/last-commit/bb4l/rpi-radio-alarm-telegrambot-go)
-[![Go Report Card](https://goreportcard.com/badge/github.com/bb4L/rpi-radio-alarm-telegrambot-go)](https://goreportcard.com/report/github.com/bb4L/rpi-radio-alarm-telegrambot-go)
+[![Go Report Card](https://goreportcard.com/badge/github.com/bb4l/rpi-radio-alarm-telegrambot-go)](https://goreportcard.com/report/github.com/bb4L/rpi-radio-alarm-telegrambot-go)
 ![GitHub issues](https://img.shields.io/github/issues-raw/bb4l/rpi-radio-alarm-telegrambot-go)
 ![Lines of code](https://img.shields.io/tokei/lines/github/bb4l/rpi-radio-alarm-telegrambot-go)
 
