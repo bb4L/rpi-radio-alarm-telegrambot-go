@@ -2,7 +2,7 @@ package types
 
 import tb "gopkg.in/tucnak/telebot.v2"
 
-// HelperConfig this struct contains the infomation to configure the helper used by the bot
+// HelperConfig this struct contains the information to configure the helper used by the bot
 type HelperConfig struct {
 	HelperType       string `yaml:"helper_type"`
 	AlarmURL         string `yaml:"alarm_url"`
@@ -16,7 +16,7 @@ type TelegramBotConfig struct {
 	AllowedUsers []int  `yaml:"allowed_users"`
 }
 
-// CanAccessBot checks and retrusn if the user is allowed to access the bot and sends a notification if the user isn't allowed
+// CanAccessBot checks and returns if the user is allowed to access the bot and sends a notification if the user isn't allowed
 func (botConfig *TelegramBotConfig) CanAccessBot(b *tb.Bot, sender *tb.User) bool {
 	for _, val := range botConfig.AllowedUsers {
 		if val == sender.ID {
