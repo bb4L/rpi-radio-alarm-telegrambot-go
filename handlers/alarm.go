@@ -3,9 +3,10 @@ package handlers
 import (
 	"encoding/json"
 	"fmt"
-	"rpi-radio-alarm-telegrambot-go/types"
 	"strconv"
 	"strings"
+
+	"github.com/bb4L/rpi-radio-alarm-telegrambot-go/types"
 
 	libraryTypes "github.com/bb4L/rpi-radio-alarm-go-library/types"
 

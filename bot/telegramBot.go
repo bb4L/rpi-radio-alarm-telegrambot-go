@@ -2,10 +2,11 @@ package bot
 
 import (
 	"os"
-	"rpi-radio-alarm-telegrambot-go/constants"
-	"rpi-radio-alarm-telegrambot-go/handlers"
-	"rpi-radio-alarm-telegrambot-go/types"
 	"time"
+
+	"github.com/bb4L/rpi-radio-alarm-telegrambot-go/constants"
+	"github.com/bb4L/rpi-radio-alarm-telegrambot-go/handlers"
+	"github.com/bb4L/rpi-radio-alarm-telegrambot-go/types"
 
 	"github.com/bb4L/rpi-radio-alarm-go-library/logging"
 	libraryTypes "github.com/bb4L/rpi-radio-alarm-go-library/types"

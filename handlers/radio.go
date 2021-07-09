@@ -3,7 +3,7 @@ package handlers
 import (
 	"encoding/json"
 
-	"rpi-radio-alarm-telegrambot-go/types"
+	"github.com/bb4L/rpi-radio-alarm-telegrambot-go/types"
 
 	libraryTypes "github.com/bb4L/rpi-radio-alarm-go-library/types"
 	tb "gopkg.in/tucnak/telebot.v2"

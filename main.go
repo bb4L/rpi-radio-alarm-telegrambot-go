@@ -6,14 +6,14 @@ import (
 	"os"
 
 	"github.com/bb4L/rpi-radio-alarm-go-library/api"
+	"github.com/bb4L/rpi-radio-alarm-go-library/logging"
 	"github.com/bb4L/rpi-radio-alarm-go-library/storage"
 	"github.com/bb4L/rpi-radio-alarm-telegrambot-go/bot"
-	"github.com/bb4L/rpi-radio-alarm-telegrambot-go/logging"
 	"github.com/bb4L/rpi-radio-alarm-telegrambot-go/types"
 	"gopkg.in/yaml.v2"
 )
 
-var logger = logging.GetLogger("main", os.Stdout)
+var logger = logging.GetLogger(os.Stdout, "main")
 
 func main() {
 	logger.Println("start telegram bot")

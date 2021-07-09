@@ -2,9 +2,10 @@ package handlers
 
 import (
 	"os"
-	"rpi-radio-alarm-telegrambot-go/constants"
-	"rpi-radio-alarm-telegrambot-go/types"
 	"strconv"
+
+	"github.com/bb4L/rpi-radio-alarm-telegrambot-go/constants"
+	"github.com/bb4L/rpi-radio-alarm-telegrambot-go/types"
 
 	"github.com/bb4L/rpi-radio-alarm-go-library/logging"
 	libraryTypes "github.com/bb4L/rpi-radio-alarm-go-library/types"
