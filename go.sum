@@ -1,5 +1,5 @@
-github.com/bb4L/rpi-radio-alarm-go-library v1.1.0 h1:Yc+M3L0XYunZ7/XOz03pS1k73yyx6br5aj4mifB87RE=
-github.com/bb4L/rpi-radio-alarm-go-library v1.1.0/go.mod h1:CoLteHtD4w9o0q78+CMECqQPsObKbOsnNDN1pO3PqYk=
+github.com/bb4L/rpi-radio-alarm-go-library v1.1.2 h1:yrVFP37Gpq0uGVlH3oEAtXP3lS5RsyJGRjbI4HNKT00=
+github.com/bb4L/rpi-radio-alarm-go-library v1.1.2/go.mod h1:CoLteHtD4w9o0q78+CMECqQPsObKbOsnNDN1pO3PqYk=
 github.com/davecgh/go-spew v1.1.0 h1:ZDRjVQ15GmhC3fiQ8ni8+OwkZQO4DARzQgrnXU1Liz8=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/joho/godotenv v1.3.0 h1:Zjp+RcGpHhGlrMbJzXTrZZPrWj+1vfm90La1wgB6Bhc=
